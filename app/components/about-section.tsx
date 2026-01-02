@@ -1,6 +1,4 @@
-// components/AboutSection.tsx
-
-const AboutSection = () => {
+export default function AboutSection() {
   return (
     <section className="retro-section">
       <h2 className="retro-heading mb-4 border-b border-foreground pb-2">
@@ -8,16 +6,15 @@ const AboutSection = () => {
       </h2>
       <div className="space-y-4">
         <p>
-          <span className="highlight text-black">Hello World!</span> I am a Full Stack 
-          Developer passionate about building things for the web since the 
-          good old days of dial-up internet.
+          I am a Full Stack Developer passionate about building things for the 
+          web since the good old days of dial-up internet.
         </p>
         <p>
-          By day, I wrangle databases and craft APIs. By night, I push pixels 
-          and debug mysterious errors. I believe in clean code, semantic HTML, 
+          By day, I wrangle databases and craft APIs. By night, I push pixels
+          and debug mysterious errors. I believe in clean code, semantic HTML,
           and the timeless beauty of a well-structured webpage.
         </p>
-        
+
         <table className="retro-table mt-4">
           <tbody>
             <tr>
@@ -31,13 +28,12 @@ const AboutSection = () => {
             <tr>
               <td className="font-bold">Status:</td>
               <td>
-                {/* We use the terminal-green token defined in your v4 CSS */}
                 <span className="text-terminal-green">●</span> Available for hire
               </td>
             </tr>
             <tr>
               <td className="font-bold">Favorite Editor:</td>
-              <td>Vim (fight me)</td>
+              <td>MS Paint (fight me)</td>
             </tr>
           </tbody>
         </table>
@@ -45,5 +41,3 @@ const AboutSection = () => {
     </section>
   );
 };
-
-export default AboutSection;
