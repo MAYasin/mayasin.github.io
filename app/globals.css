@@ -35,15 +35,9 @@
 
   /* Animations */
   --animate-blink: blink 1s steps(2, start) infinite;
-  --animate-marquee: marquee 10s linear infinite;
-  --animate-wiggle: wiggle 0.5s ease-in-out infinite;
 
   @keyframes blink {
     to { visibility: hidden; }
-  }
-  @keyframes marquee {
-    0% { transform: translateX(100%); }
-    100% { transform: translateX(-100%); }
   }
   @keyframes wiggle {
     0%, 100% { transform: rotate(-3deg); }
@@ -105,8 +99,6 @@
 
   /* Utility classes for the custom animations */
   .blink { @apply animate-blink; }
-  .marquee { @apply animate-marquee; }
-  .under-construction { @apply animate-wiggle inline-block; }
 }
 
 /* 4. Dark Mode overrides */

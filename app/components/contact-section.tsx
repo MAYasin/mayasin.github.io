@@ -14,30 +14,22 @@ const ContactSection = () => {
           <tr>
             <td className="font-bold w-1/3">Email:</td>
             <td>
-              <a href="mailto:hello@developer.com">hello@developer.com</a>
+              <a href="mailto:m.amanyasin@gmail.com">m.amanyasin@gmail.com</a>
             </td>
           </tr>
           <tr>
             <td className="font-bold">GitHub:</td>
             <td>
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer">
-                github.com/developer
+              <a href="https://github.com/MAYasin" target="_blank" rel="noopener noreferrer">
+                github.com/MAYasin
               </a>
             </td>
           </tr>
           <tr>
             <td className="font-bold">LinkedIn:</td>
             <td>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
-                linkedin.com/in/developer
-              </a>
-            </td>
-          </tr>
-          <tr>
-            <td className="font-bold">Twitter:</td>
-            <td>
-              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-                @developer
+              <a href="https://linkedin.com/in/mamanyasin" target="_blank" rel="noopener noreferrer">
+                linkedin.com/in/mamanyasin
               </a>
             </td>
           </tr>

@@ -1,17 +1,16 @@
-"use client"; // Required for interactivity in Next.js App Router
+"use client";
 
-interface RetroNavProps {
+interface NavProps {
   activeSection: string;
   onNavigate: (section: string) => void;
 }
 
-const RetroNav = ({ activeSection, onNavigate }: RetroNavProps) => {
+const Nav = ({ activeSection, onNavigate }: NavProps) => {
   const navItems = [
     { id: 'about', label: '[About Me]' },
     { id: 'skills', label: '[Skills]' },
     { id: 'projects', label: '[Projects]' },
-    { id: 'contact', label: '[Contact]' },
-    { id: 'guestbook', label: '[Guestbook]' },
+    { id: 'contact', label: '[Contact]' }
   ];
 
   return (
@@ -20,9 +19,9 @@ const RetroNav = ({ activeSection, onNavigate }: RetroNavProps) => {
         {navItems.map((item) => (
           <button
             key={item.id}
-            type="button" // Good practice for buttons that don't submit forms
+            type="button"
             onClick={() => onNavigate(item.id)}
-            className={`hover:bg-foreground hover:text-background px-2 py-1 transition-none ${
+            className={`hover:bg-foreground hover:text-background px-2 py-1 transition-none cursor-pointer ${
               activeSection === item.id ? 'bg-foreground text-background' : ''
             }`}
           >
@@ -34,4 +33,4 @@ const RetroNav = ({ activeSection, onNavigate }: RetroNavProps) => {
   );
 };
 
-export default RetroNav;
+export default Nav;

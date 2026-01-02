@@ -1,20 +1,13 @@
 "use client";
 
 import { useState, useRef } from 'react';
-import RetroHeader from './components/retro-header';
-import RetroNav from './components/retro-nav';
+import RetroHeader from './components/header';
+import Nav from './components/nav';
 import AboutSection from './components/about-section';
-import RetroFooter from './components/retro-footer';
+import Footer from './components/footer';
 import SkillsSection from './components/skills-section';
 import ProjectsSection from './components/project-section';
 import ContactSection from './components/contact-section';
-import GuestbookSection from './components/guestbook-section';
-// import AboutSection from '@/components/AboutSection';
-// import SkillsSection from '@/components/SkillsSection';
-// import ProjectsSection from '@/components/ProjectsSection';
-// import ContactSection from '@/components/ContactSection';
-// import GuestbookSection from '@/components/GuestbookSection';
-// import RetroFooter from '@/components/RetroFooter';
 
 export default function Home() {
   const [activeSection, setActiveSection] = useState('about');
@@ -41,7 +34,7 @@ export default function Home() {
     <div className="min-h-screen bg-background">
       <div className="retro-container">
         <RetroHeader />
-        <RetroNav activeSection={activeSection} onNavigate={handleNavigate} />
+        <Nav activeSection={activeSection} onNavigate={handleNavigate} />
 
         <main>
           <div ref={aboutRef}><AboutSection /></div>
@@ -51,11 +44,9 @@ export default function Home() {
           <div ref={projectsRef}><ProjectsSection /></div>
           <hr />
           <div ref={contactRef}><ContactSection /></div>
-          <hr />
-          <div ref={guestbookRef}><GuestbookSection /></div>
         </main>
 
-        <RetroFooter />
+        <Footer />
       </div>
     </div>
   );

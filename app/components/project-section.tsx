@@ -1,4 +1,4 @@
-const ProjectsSection = () => {
+export default function ProjectsSection() {
   const projects = [
     {
       name: 'E-Commerce Platform',
@@ -69,12 +69,10 @@ const ProjectsSection = () => {
       </div>
 
       <p className="mt-6 text-center text-muted-foreground">
-        <span className="under-construction">🚧</span>
+        <span>🚧</span>
         {' '}More projects coming soon!{' '}
-        <span className="under-construction">🚧</span>
+        <span>🚧</span>
       </p>
     </section>
   );
 };
-
-export default ProjectsSection;
