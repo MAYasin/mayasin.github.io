@@ -5,7 +5,7 @@ import RetroHeader from './components/header';
 import Nav from './components/nav';
 import AboutSection from './components/about-section';
 import Footer from './components/footer';
-import SkillsSection from './components/skills-section';
+import ExperienceSection from './components/experience-section';
 import ProjectsSection from './components/project-section';
 import ContactSection from './components/contact-section';
 
@@ -13,7 +13,7 @@ export default function Home() {
   const [activeSection, setActiveSection] = useState('about');
 
   const aboutRef = useRef<HTMLDivElement>(null);
-  const skillsRef = useRef<HTMLDivElement>(null);
+  const experienceRef = useRef<HTMLDivElement>(null);
   const projectsRef = useRef<HTMLDivElement>(null);
   const contactRef = useRef<HTMLDivElement>(null);
   const guestbookRef = useRef<HTMLDivElement>(null);
@@ -22,7 +22,7 @@ export default function Home() {
     setActiveSection(section);
     const refs: { [key: string]: React.RefObject<HTMLDivElement | null> } = {
       about: aboutRef,
-      skills: skillsRef,
+      experience: experienceRef,
       projects: projectsRef,
       contact: contactRef,
       guestbook: guestbookRef,
@@ -39,7 +39,7 @@ export default function Home() {
         <main>
           <div ref={aboutRef}><AboutSection /></div>
           <hr />
-          <div ref={skillsRef}><SkillsSection /></div>
+          <div ref={experienceRef}><ExperienceSection /></div>
           <hr />
           <div ref={projectsRef}><ProjectsSection /></div>
           <hr />
