@@ -7,15 +7,16 @@ export default function AboutSection() {
       <div className="space-y-4">
         <p>
           I am a Full Stack Developer passionate about building things for the 
-          web since the good old days of dial-up internet.
+          web since the early days of distributed systems and interactive interfaces.
         </p>
         <p>
-          By day, I wrangle databases and craft APIs. By night, I push pixels
-          and debug mysterious errors. I believe in clean code, semantic HTML,
-          and the timeless beauty of a well-structured webpage.
+          By day, I bridge the gap between robust backend architecture and modern 
+          client-side delivery to build scalable enterprise solutions. I believe 
+          in clean code, solid architecture, and the timeless value of 
+          well-structured software that drives real business impact.
         </p>
 
-        <table className="retro-table mt-4">
+        <table className="retro-table mt-4 w-full">
           <tbody>
             <tr>
               <td className="w-1/3 font-bold">Location:</td>
@@ -28,12 +29,16 @@ export default function AboutSection() {
             <tr>
               <td className="font-bold">Status:</td>
               <td>
-                <span className="text-terminal-green">●</span> Available for hire
+                <span className="text-terminal-green">●</span> Alive
               </td>
             </tr>
             <tr>
               <td className="font-bold">Favorite Editor:</td>
               <td>MS Paint (fight me)</td>
+            </tr>
+            <tr>
+              <td className="font-bold">Side Effects:</td>
+              <td>🐞 🐛 🦗</td>
             </tr>
           </tbody>
         </table>
