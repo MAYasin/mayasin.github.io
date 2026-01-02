@@ -18,8 +18,8 @@ export default function ExperienceSection() {
       company: 'First National Bank (FNB)',
       role: 'Software Engineer (via Dariel)',
       period: 'Feb 2022 - Oct 2024',
-      tech: 'Spring Boot, Camunda BPMN, Microservices, OCEP',
-      description: 'Developed Fintegrate 2, orchestrating B2B processes. Built real-time monitoring tools and admin front-ends using the OCEP framework.',
+      tech: 'Spring Boot, Java, Camunda BPMN, Backend Microservices, OCEP',
+      description: 'Developed and maintained Fintegrate 2, a backend microservice architecture specifically designed for orchestrating B2B Payment processes. Implemented real-time monitoring tools and internal admin platforms to ensure system reliability and operational visibility.',
     },
     {
       company: 'The Wot-if? Trust',
@@ -43,7 +43,6 @@ export default function ExperienceSection() {
               {exp.company}
             </h3>
             <p className="font-bold italic text-sm">{exp.role}</p>
-
 
             <p className="mt-3 text-sm leading-relaxed">
               {exp.description}
