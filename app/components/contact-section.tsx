@@ -1,4 +1,4 @@
-const ContactSection = () => {
+export default function ContactSection() {
   return (
     <section className="retro-section">
       <h2 className="retro-heading border-b border-foreground pb-2 mb-4">
@@ -35,45 +35,6 @@ const ContactSection = () => {
           </tr>
         </tbody>
       </table>
-
-      <hr className="my-6" />
-
-      <div className="text-center">
-        <p className="mb-4">Or use this handy form:</p>
-        <form className="text-left max-w-md mx-auto space-y-4">
-          <div>
-            <label className="block mb-1">Your Name:</label>
-            <input 
-              type="text" 
-              className="w-full border-2 border-foreground bg-background p-2 focus:outline-none focus:bg-muted"
-              placeholder="John Doe"
-            />
-          </div>
-          <div>
-            <label className="block mb-1">Your Email:</label>
-            <input 
-              type="email" 
-              className="w-full border-2 border-foreground bg-background p-2 focus:outline-none focus:bg-muted"
-              placeholder="john@example.com"
-            />
-          </div>
-          <div>
-            <label className="block mb-1">Message:</label>
-            <textarea 
-              className="w-full border-2 border-foreground bg-background p-2 focus:outline-none focus:bg-muted h-32 resize-none"
-              placeholder="Hello! I'd like to..."
-            />
-          </div>
-          <button 
-            type="submit"
-            className="w-full border-2 border-foreground bg-foreground text-background p-2 hover:bg-background hover:text-foreground transition-none font-bold"
-          >
-            [ SEND MESSAGE ]
-          </button>
-        </form>
-      </div>
     </section>
   );
 };
-
-export default ContactSection;

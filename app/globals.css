@@ -32,17 +32,6 @@
 
   /* Radius */
   --radius-none: 0;
-
-  /* Animations */
-  --animate-blink: blink 1s steps(2, start) infinite;
-
-  @keyframes blink {
-    to { visibility: hidden; }
-  }
-  @keyframes wiggle {
-    0%, 100% { transform: rotate(-3deg); }
-    50% { transform: rotate(3deg); }
-  }
 }
 
 /* 2. Base Layer (Replacing @layer base) */
@@ -92,13 +81,6 @@
       @apply border border-foreground p-2 text-left;
     }
   }
-
-  .highlight {
-    @apply bg-highlight px-1 text-black;
-  }
-
-  /* Utility classes for the custom animations */
-  .blink { @apply animate-blink; }
 }
 
 /* 4. Dark Mode overrides */
