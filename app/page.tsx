@@ -10,6 +10,26 @@ import ProjectsSection from './components/project-section';
 import ContactSection from './components/contact-section';
 
 export default function Home() {
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Person',
+    name: 'M. Aman Yasin',
+    jobTitle: 'Full Stack Developer',
+    url: 'https://mayasin.github.io',
+    sameAs: [
+      'https://github.com/MAYasin',
+      'https://linkedin.com/in/mamanyasin'
+    ],
+    description: 'Full Stack Developer bridging backend architecture and modern client-side delivery to build scalable web solutions.',
+    knowsAbout: [
+      'Full Stack Development',
+      'Next.js',
+      'React',
+      'Backend Architecture',
+      'Distributed Systems'
+    ],
+  };
+
   const [activeSection, setActiveSection] = useState('about');
 
   const aboutRef = useRef<HTMLDivElement>(null);
@@ -32,6 +52,11 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-background">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+
       <div className="retro-container">
         <RetroHeader />
         <Nav activeSection={activeSection} onNavigate={handleNavigate} />
